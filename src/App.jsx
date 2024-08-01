@@ -1,7 +1,8 @@
+import Register from "./Register";
 
 
 function App() {
-  return (null);
+  return (<main><Register /></main>);
 }
 
 export default App
