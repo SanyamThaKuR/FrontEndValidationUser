@@ -8,12 +8,13 @@
 html {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #333;
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to right, dodgerblue, darkblue);
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    /* Soft gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,9 +37,10 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    /* Light background with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in;
 }
 
@@ -51,13 +53,15 @@ form {
 
 a,
 a:visited {
-    color: #4c8cff;
+    color: #50e3c2;
+    /* Light teal color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #fff;
+    color: #4a90e2;
+    /* Soft blue color on hover */
     text-decoration: underline;
 }
 
@@ -75,8 +79,9 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #4c8cff;
-    box-shadow: 0 0 4px rgba(76, 140, 255, 0.5);
+    border-color: #4a90e2;
+    /* Blue border on focus */
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
     outline: none;
 }
 
@@ -88,7 +93,8 @@ button {
 button {
     padding: 0.75rem;
     border: none;
-    background: #4c8cff;
+    background: #4a90e2;
+    /* Blue button color */
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -96,13 +102,14 @@ button {
 
 button:hover {
     background: #357ae8;
+    /* Darker blue on hover */
     transform: scale(1.05);
 }
 
 .instructions {
     font-size: 0.875rem;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 0.5rem;
     position: relative;
@@ -124,23 +131,27 @@ button:hover {
 }
 
 .valid {
-    color: limegreen;
+    color: #28a745;
+    /* Green for valid input */
     margin-left: 0.5rem;
 }
 
 .invalid {
-    color: red;
+    color: #dc3545;
+    /* Red for invalid input */
     margin-left: 0.5rem;
 }
 
 .errmsg {
-    background-color: lightpink;
-    color: firebrick;
+    background-color: #f8d7da;
+    /* Light red background for error messages */
+    color: #721c24;
+    /* Dark red text for error messages */
     font-weight: bold;
     padding: 0.75rem;
     margin-bottom: 0.75rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .line {
